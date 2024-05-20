@@ -264,13 +264,17 @@ body {
 /*  Welcome to Hell CSS */
 
 /*  Min Hein Htut */
-
-.sidebar {
+.container{
+  display: flex;
+}
+.left{
+  width: 255px;
   background-color: #173358;
+  min-height: 100vh;
+}
+.sidebar {
   display: flex;
   flex-direction: column;
-  width: 255px;
-  min-height: 100vh;
   padding: 1.8rem;
 }
 
@@ -291,9 +295,9 @@ body {
   margin-top: 2rem;
 }
 
-body {
+/* body {
   position: relative;
-}
+} */
 
 .Frow {
   position: absolute;
@@ -370,4 +374,41 @@ body {
 .button6:hover {
   background-color: rgb(53, 196, 143);
   color: #173358;
+}
+
+
+/* NgweZinThaw */
+.all-info{
+  margin-top: 2rem;
+  width: 40%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  padding: 20px;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.title button{
+  border: 1px solid black;
+  padding: 0px 10px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.student-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.student-image{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.student-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-container{
+  display: flex;
 }
