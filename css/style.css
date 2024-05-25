@@ -323,7 +323,6 @@ body {
 }
 
 /*  Academic Dashboard */
-/*  Welcome to Hell CSS */
 
 /*  Min Hein Htut */
 
@@ -366,4 +365,146 @@ body {
   height: 50px;
   background-color: #f1f1f1;
   border-radius: 50%;
+}
+
+/* --------------------- NgweZinThaw ------------------------- */
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  width: 95%;
+}
+
+.all-info {
+  margin-top: 1rem;
+  width: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  padding: 20px;
+  border-radius: 10px;
+}
+.all-info.student-info {
+  margin-right: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title button {
+  border: 1px solid black;
+  padding: 0px 10px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.student-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.student-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.student-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* NoeNoe */
+.info{
+  justify-content: space-between;
+  margin: 0 30px;
+  width: 95%;
+}
+
+.timetable{
+  margin-top: 1rem;
+  width: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.time-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.M{
+  line-height: 65px;
+  width: 65px;
+  height: 65px;
+  background-color: rgb(60, 172, 233);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.M1{
+  line-height: 65px;
+  width: 65px;
+  height: 65px;
+  background-color: pink;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.courses{
+  margin-left: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.hour{
+  margin-top: 10px;
+}
+
+/* Htay Aung */
+
+.circle-con {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-chart {
+  width: 150px;
+  height: 150px;
+  border: 20px solid green;
+  border-radius: 50%;
+  border-top-color: red;
+  display: flex;
+  background-color: white;
+}
+.circle-con h2 {
+  color: black;
+  font-size: 1.4rem;
+}
+.attendance-report {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin:0 30px;
+  margin-top:10px ;
+  border-radius: 10px;
+}
+.circle-con:nth-child(2) .circle-chart {
+  transform: rotate(30deg);
+}
+.circle-con:nth-child(3) .circle-chart {
+  transform: rotate(50deg);
+}
+.circle-con:nth-child(4) .circle-chart {
+  transform: rotate(80deg);
 }
