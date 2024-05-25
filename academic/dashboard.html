@@ -1,126 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Academic Dashboard </title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-<body>
-   <div class="container">
-      <div class="left">
-         <nav class="sidebar">
-            <img class="nnuICON" src="../images/site-logo.svg" alt="">
-            <a class="button1" href="">Dashboard</a>
-            <a class="button2" href="">Students Info</a>
-            <a class="button3" href="">Attendance</a>
-            <a class="button4" href="">Courses</a>
-            <a class="button5" href="">Add Users</a>
-            <a class="button6" href="">Account</a>
-         </nav>
+  <body>
+    <div class="side-bar">
+      <img class="nnuICON" src="../images/site-logo.svg" alt="" />
+
+      <nav>
+        <a class="button" href="">Dashboard</a>
+        <a class="button" href="">Students Info</a>
+        <a class="button" href="">Attendance</a>
+        <a class="button" href="">Courses</a>
+        <a class="button" href="">Add Users</a>
+        <a class="button" href="">Account</a>
+      </nav>
+
+      <button>Log Out</button>
+    </div>
+
+    <div class="body">
+      <div class="profile">
+        <img src="../images/_3131b091-802f-46e9-97cd-b8ab2fcac044.jpg" alt="" />
+        <div class="name">
+          <h2>Chaw Su</h2>
+          <p>Admin</p>
+        </div>
       </div>
 
-      <div class="right">
-         <div class="Frow">
-            <div class="TC">
-              <p class="headfw"> Total Classes </p>
-              <div class="c"></div>
-              <p class="count"> 69 </p>
-            </div>
-   
-            <div class="TC">
-               <p class="headfw"> Total Students </p>
-               <div class="c"></div>
-               <p class="count"> 4786 </p>
-            </div>
-   
-            <div class="TC">
-               <p class="headfw"> Total Lessons </p>
-               <div class="c"></div>
-               <p class="count"> 9302</p>
-            </div>
-         </div>  
-      </div>
-   </div>
-   
+      <div class="Frow">
+        <div class="TC">
+          <div class="text">
+            <h2 class="headfw">Total Classes</h2>
+            <p class="count">69</p>
+          </div>
+          <div class="c"></div>
+        </div>
 
-   <div class="info-container">
-      <div class="all-info">
-         <div class="title">
-            <h1>Student Information</h1>
+        <div class="TC">
+          <div class="text">
+            <h2 class="headfw">Total Students</h2>
+            <p class="count">4786</p>
+          </div>
+          <div class="c"></div>
+        </div>
+
+        <div class="TC">
+          <div class="text">
+            <h2 class="headfw">Total Lessons</h2>
+            <p class="count">9302</p>
+          </div>
+          <div class="c"></div>
+        </div>
+      </div>
+
+      <!------------------------------ Ngwe Zin Thaw ----------------------------------->
+      <div class="info-container">
+        <div class="all-info student-info">
+          <div class="title">
+            <h2>Student Information</h2>
             <button>view all</button>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/viber_image_2024-04-01_11-04-58-394.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/_3131b091-802f-46e9-97cd-b8ab2fcac044.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Yair Htet</h3>
-               <p>NCC Level-4 Diploma in Computing</p>
+              <h3>Yair Htet</h3>
+              <p>NCC Level-4 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/SaiSitt.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/SaiSitt.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Sai Sitt Paing Oo</h3>
-               <p>NCC Level-5 Diploma in Computing</p>
+              <h3>Sai Sitt Paing Oo</h3>
+              <p>NCC Level-5 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/HtayAung.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/HtayAung.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Htay Aung</h3>
-               <p>NCC Level-5 Diploma in Computing</p>
+              <h3>Htay Aung</h3>
+              <p>NCC Level-5 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
-      </div>
+          </div>
+        </div>
 
-      <div class="all-info">
-         <div class="title">
-            <h1>Teacher Information</h1>
+        <div class="all-info">
+          <div class="title">
+            <h2>Teacher Information</h2>
             <button>view all</button>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/TrAyeAye.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/TrAyeAye.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Dr. Aye Aye</h3>
-               <p>NCC Level-4 Diploma in Computing</p>
+              <h4>Dr. Aye Aye</h4>
+              <p>NCC Level-4 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/Tr-MyatMonAye.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/Tr-MyatMonAye.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Dr. Myat Mon Aye</h3>
-               <p>NCC Level-4 Diploma in Computing</p>
+              <h3>Dr. Myat Mon Aye</h3>
+              <p>NCC Level-4 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
+          </div>
 
-         <div class="student-wrapper">
-            <img src="../images/TrEiEiKhin.jpg" alt="student's photo" class="student-image">
+          <div class="student-wrapper">
+            <img
+              src="../images/TrEiEiKhin.jpg"
+              alt="student's photo"
+              class="student-image"
+            />
             <div class="student-detail">
-               <h3>Tr. Ei Ei Khin</h3>
-               <p>NCC Level-4 Diploma in Computing</p>
+              <h3>Tr. Ei Ei Khin</h3>
+              <p>NCC Level-4 Diploma in Computing</p>
             </div>
             <i class="bi bi-three-dots"></i>
-         </div>
+          </div>
+        </div>
       </div>
+         <!--NoeNoe-->
+      <div class="info">
+        <div class="timetable">
+          <div class="title">
+            <h2>Today's Timetable</h2>
+            <h4>></h4>
+          </div>
 
-   </div>
-     
+          <div class="time-wrapper">
+            <div class="M">
+              <h2>M</h2>
+            </div>
+            <div class="courses">
+              <h3>SFC</h3>
+              <p>09:30am - 10:15am</p>
+            </div>
+            <p class="hour">45min</p>
+          </div>
 
-     
-     
-</body>
+          <div class="time-wrapper">
+            <div class="M1">
+              <h2>S</h2>
+            </div>
+            <div class="courses">
+              <h3>SDT</h3>
+              <p>09:30am - 10:15am</p>
+            </div>
+            <p class="hour">55min</p>
+          </div>
 
+          <div class="time-wrapper">
+            <div class="M">
+              <h2>D</h2>
+            </div>
+            <div class="courses">
+              <h3>DDOOCP</h3>
+              <p>09:30am - 10:15am</p>
+            </div>
+            <p class="hour">30min</p>
+          </div>
+        </div>
+
+      <!-- Htay Aung -->
+      <div class="attendance-report">
+        <div class="circle-con">
+          <div class="circle-chart"></div>
+          <h2>ABE</h2>
+        </div>
+        <div class="circle-con">
+          <div class="circle-chart"></div>
+          <h2>NCC</h2>
+        </div>
+        <div class="circle-con">
+          <div class="circle-chart"></div>
+          <h2>GED</h2>
+        </div>
+        <div class="circle-con">
+          <div class="circle-chart"></div>
+          <h2>IGCSE</h2>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

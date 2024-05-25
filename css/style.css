@@ -2,27 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   position: relative;
 }
 
-.nav {
-  width: 200px;
-  min-height: 100vh;
+.side-bar {
   background-color: #173358;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 200px;
+  min-height: 100vh;
   position: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav a {
-  color: #f1f1f1;
+.nnuICON {
+  width: 150px;
+  position: absolute;
+  top: 30px;
+}
+
+.button {
+  width: 180px;
+  display: block;
   text-decoration: none;
-  margin: 10px 0;
+  color: black;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(53, 196, 143);
+  color: #173358;
+}
+
+.side-bar button {
+  width: 120px;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 50px;
 }
 
 .body {
@@ -34,7 +59,9 @@ body {
 .profile {
   width: 60%;
   height: 110px;
-  background-color: blueviolet;
+  margin: 0 30px;
+  padding: 10px 20px;
+  background-color: #173358;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -44,6 +71,10 @@ body {
 .profile img {
   width: 15%;
   border-radius: 50%;
+}
+
+.name {
+  color: #f1f1f1;
 }
 
 .recording {
@@ -58,15 +89,17 @@ body {
 }
 
 .heading h2 {
-  background-color: skyblue;
   padding: 10px 20px;
   border-radius: 10px;
 }
 
 .heading button {
-  border-color: transparent;
-  padding: 0px 10px;
+  padding: 5px 10px;
+  background-color: #173358;
+  color: #f1f1f1;
+  border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .record {
@@ -77,22 +110,25 @@ body {
 
 .video {
   width: 200px;
-  background-color: khaki;
-  padding: 20px;
+  background-color: #173358;
+  padding: 17px 0px 0px 0px;
+  height: 150px;
   border-radius: 10px;
   margin-top: 10px;
 }
 
 .ban {
   width: 80%;
-  height: 50px;
+  height: 100px;
   margin: auto;
-  background-color: cadetblue;
+  background-color: #f1f1f1;
   border-radius: 10px;
 }
 
 .video p {
   text-align: center;
+  color: #f1f1f1;
+  margin-top: 5px;
 }
 
 .pagination {
@@ -120,45 +156,31 @@ body {
   margin: 20px;
 }
 
-.course-material h2 {
-  margin: 20px;
-}
-
-.course-material {
-  width: 50%;
-  margin-left: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
-  border-radius: 10px;
-}
-.courses {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
 .attend-course {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 350px;
 }
 
 .attend {
   width: 50%;
+  height: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-top: 14.5px;
+  padding: 0px 20px;
+  margin-top: 0px;
 }
 
 .chart-group {
@@ -204,6 +226,46 @@ body {
   height: 200px;
 }
 
+.course-material {
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  border-radius: 10px;
+}
+
+.course-material h2 {
+  margin: 20px;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.course {
+  width: 200px;
+  background-color: #173358;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.course-photo {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.course p {
+  text-align: center;
+  color: #f1f1f1;
+}
+
 .calendar-grade {
   margin-top: 30px;
   display: flex;
@@ -236,10 +298,10 @@ body {
 .grade .circle {
   width: 150px;
   height: 150px;
-  border: 20px solid black;
+  border: 20px solid #173358;
   border-radius: 50%;
   border-top-color: transparent;
-  transform: rotate(-40deg);
+  transform: rotate(-45deg);
   align-self: center;
 }
 
@@ -261,63 +323,30 @@ body {
 }
 
 /*  Academic Dashboard */
-/*  Welcome to Hell CSS */
 
 /*  Min Hein Htut */
-.container{
-  display: flex;
-}
-.left{
-  width: 255px;
-  background-color: #173358;
-  min-height: 100vh;
-}
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  padding: 1.8rem;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 20px;
-  background-color: #f1f1f1;
-  margin: 21px;
-  margin-left: 10px;
-  text-align: end;
-  border-radius: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.nnuICON {
-  margin-bottom: 7rem;
-  margin-top: 2rem;
-}
-
-/* body {
-  position: relative;
-} */
 
 .Frow {
-  position: absolute;
-  bottom: 70%;
-  left: 10%;
-  width: 80%;
+  width: 100%;
+  margin: 30px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .TC {
-  width: 25%;
+  width: 30%;
   background-color: #173358;
   border-radius: 10px;
   color: #f1f1f1;
-  padding: 4rem 3rem;
-  margin: 1rem;
+  padding: 3rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
 }
 
 .headfw {
@@ -325,90 +354,157 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
-  position: absolute;
-  left: 8%;
-  top: 10%;
-}
-
-.c {
-  width: 70px;
-  height: 70px;
-  background-color: #f1f1f1;
-  border-radius: 50%;
-  position: absolute;
-  right: 10%;
 }
 
 .count {
-  position: absolute;
   font-size: 1.5rem;
-  left: 25%;
-  top: 50%;
 }
 
-.button1:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
+.c {
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
 }
 
-.button2:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
+/* --------------------- NgweZinThaw ------------------------- */
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  width: 95%;
 }
 
-.button3:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
-}
-
-.button4:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
-}
-
-.button5:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
-}
-
-.button6:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
-}
-
-
-/* NgweZinThaw */
-.all-info{
-  margin-top: 2rem;
-  width: 40%;
+.all-info {
+  margin-top: 1rem;
+  width: 50%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
   padding: 20px;
+  border-radius: 10px;
 }
-.title{
+.all-info.student-info {
+  margin-right: 10px;
+}
+.title {
   display: flex;
   justify-content: space-between;
 }
-.title button{
+.title button {
   border: 1px solid black;
   padding: 0px 10px;
   border-radius: 20px;
   background-color: transparent;
 }
-.student-wrapper{
+.student-wrapper {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
 }
-.student-image{
-  width: 80px;
-  height: 80px;
+.student-image {
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
 }
-.student-detail{
+.student-detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.info-container{
+/* NoeNoe */
+.info{
+  justify-content: space-between;
+  margin: 0 30px;
+  width: 95%;
+}
+
+.timetable{
+  margin-top: 1rem;
+  width: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.time-wrapper {
   display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.M{
+  line-height: 65px;
+  width: 65px;
+  height: 65px;
+  background-color: rgb(60, 172, 233);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.M1{
+  line-height: 65px;
+  width: 65px;
+  height: 65px;
+  background-color: pink;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.courses{
+  margin-left: -70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.hour{
+  margin-top: 10px;
+}
+
+/* Htay Aung */
+
+.circle-con {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-chart {
+  width: 150px;
+  height: 150px;
+  border: 20px solid green;
+  border-radius: 50%;
+  border-top-color: red;
+  display: flex;
+  background-color: white;
+}
+.circle-con h2 {
+  color: black;
+  font-size: 1.4rem;
+}
+.attendance-report {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin:0 30px;
+  margin-top:10px ;
+  border-radius: 10px;
+}
+.circle-con:nth-child(2) .circle-chart {
+  transform: rotate(30deg);
+}
+.circle-con:nth-child(3) .circle-chart {
+  transform: rotate(50deg);
+}
+.circle-con:nth-child(4) .circle-chart {
+  transform: rotate(80deg);
 }
