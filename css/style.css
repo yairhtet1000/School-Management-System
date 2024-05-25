@@ -26,7 +26,7 @@ body {
   top: 30px;
 }
 
-nav a {
+.button {
   width: 180px;
   display: block;
   text-decoration: none;
@@ -35,6 +35,11 @@ nav a {
   background-color: #f1f1f1;
   margin: 20px;
   border-radius: 10px;
+}
+
+.button:hover {
+  background-color: rgb(53, 196, 143);
+  color: #173358;
 }
 
 .side-bar button {
@@ -361,9 +366,4 @@ nav a {
   height: 50px;
   background-color: #f1f1f1;
   border-radius: 50%;
-}
-
-.button:hover {
-  background-color: rgb(53, 196, 143);
-  color: #173358;
 }
