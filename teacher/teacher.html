@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+
+      @layer components {
+        .nnu-card {
+          @apply cursor-pointer hover:scale-[1.05] transition duration-300 ease-in-out;
+        }
+
+        .bar {
+          @apply w-[40px] h-[5px] bg-black transition-all duration-300 ease-in-out rounded-md;
+        }
+        .active .bar1 {
+          transform: rotate(45deg) translate(4px, 9px);
+        }
+        .active .bar2 {
+          width: 0;
+        }
+        .active .bar3 {
+          transform: rotate(-45deg) translate(4px, -9px);
+        }
+        .menu {
+          @apply z-10  w-[40%] lg:w-[15%] h-[100vh] text-white py-10 flex flex-col items-center justify-between left-[-300px] md:left-[-450px] lg:left-0 bg-[#173358] fixed transition-all duration-300 ease-out;
+        }
+        .active.menu {
+          @apply left-0;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- side nav bar start -->
+    <nav class="menu" id="menu">
+      <img class="w-24" src="../images/image.png" alt="" />
+      <ul class="h-[30%] flex flex-col w-full items-center justify-evenly">
+        <li
+          class="select-none cursor-pointer hover:bg-green-400 w-full text-center p-2 rounded-lg"
+        >
+          Dashboard
+        </li>
+        <li
+          class="select-none cursor-pointer hover:bg-green-400 w-full text-center rounded-lg p-2"
+        >
+          Students
+        </li>
+        <li
+          class="select-none cursor-pointer hover:bg-green-400 w-full text-center rounded-lg p-2"
+        >
+          Time Table
+        </li>
+      </ul>
+
+      <button
+        class="select-none cursor-pointer hover:bg-green-400 w-full text-center rounded-lg p-2"
+      >
+        Logout
+      </button>
+    </nav>
+    <!-- side nav bar end -->
+
+    <!-- top nav start  -->
+    <div
+      class="w-full p-3 flex shadow-md rounded-md items-center justify-between"
+    >
+      <div class="p-3 lg:ps-[20%] flex rounded-md">
+        <img
+          class="w-20 rounded-[50%]"
+          src="../images/_3131b091-802f-46e9-97cd-b8ab2fcac044.jpg"
+          alt=""
+        />
+
+        <div class="flex flex-col ms-10 pt-2">
+          <h1>Teacher Name</h1>
+          <p>lecturer</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col h-6 justify-between justify-self-end lg:hidden"
+        id="bar"
+      >
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </div>
+    <!-- top nav end  -->
+
+    <!-- main body start  -->
+    <main class="mx-auto flex justify-center items-center px-5 lg:px-0">
+      <!-- all card container start  -->
+      <div class="lg:w-[60%] w-[100%]">
+        <!-- teacher materials start  -->
+        <div
+          class="w-full flex justify-between items-center mt-10 md:flex-row flex-col"
+        >
+          <div
+            class="nnu-card shadow-lg w-[100%] md:w-[30%] mb-6 rounded-md overflow-hidden flex flex-col justify-center items-center"
+            id="nnu-card1"
+          >
+            <lottie-player
+              id="lottie_player1"
+              src="https://lottie.host/ec83066c-3168-430c-b468-7bb0d4209fc1/1ll0rXfJon.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+            ></lottie-player>
+
+            <h1 class="text-3xl pb-5 md:text-xl">Assignment File</h1>
+          </div>
+
+          <div
+            class="nnu-card shadow-lg h-full w-[100%] md:w-[30%] mb-6 rounded-md overflow-hidden flex flex-col justify-center items-center"
+            id="nnu-card2"
+          >
+            <lottie-player
+              id="lottie_player2"
+              src="https://lottie.host/9d6126e6-ebfd-4dee-a4e3-bd0959731b01/wCouGIAAz6.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+            ></lottie-player>
+            <h1 class="text-3xl pb-5 md:text-xl">Chat with Academic team</h1>
+          </div>
+
+          <div
+            class="nnu-card shadow-lg w-[100%] md:w-[30%] mb-6 rounded-md overflow-hidden flex flex-col justify-center items-center"
+            id="nnu-card3"
+          >
+            <lottie-player
+              id="lottie_player3"
+              src="https://lottie.host/0bcc5072-dfef-416c-9e87-a3315101bc7f/gFTOyq6lPN.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+            ></lottie-player>
+            <h1 class="text-3xl pb-5 md:text-xl">Learning Materials</h1>
+          </div>
+        </div>
+        <!-- teacher materials end  -->
+
+        <!-- questions section start -->
+        <section class="mt-10 p-5 rounded-md lg:border-2">
+          <h1 class="font-bold text-center md:text-start md:text-xl text-3xl">
+            Questions
+          </h1>
+          <div
+            class="flex justify-evenly items-center mt-5 flex-col md:flex-row"
+          >
+            <div
+              class="nnu-card shadow-lg w-[100%] md:w-[40%] rounded-md overflow-hidden flex flex-col justify-center items-center"
+              id="nnu-card4"
+            >
+              <lottie-player
+                id="lottie_player4"
+                src="https://lottie.host/e898bd40-3884-45a5-90ee-7f9d6d4428ba/wHPaaMsRo1.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+              ></lottie-player>
+              <h1 class="text-3xl pb-5 md:text-xl">Assignment Questions</h1>
+            </div>
+
+            <div
+              class="nnu-card shadow-lg w-[100%] md:w-[40%] rounded-md overflow-hidden flex flex-col justify-center items-center"
+              id="nnu-card5"
+            >
+              <lottie-player
+                id="lottie_player5"
+                src="https://lottie.host/e85843c6-104a-478d-93f4-f4fcdf726b52/bJlm5W4fLD.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+              >
+              </lottie-player>
+              <h1 class="text-3xl pb-5 md:text-xl">Exam Old Questions</h1>
+            </div>
+          </div>
+        </section>
+        <!-- questions section end  -->
+
+        <!-- time table start  -->
+        <div
+          class="my-10 flex justify-between items-center md:h-[350px] flex-col md:flex-row"
+        >
+          <div
+            class="shadow-lg w-full md:w-[40%] h-full rounded-md overflow-hidden flex flex-col justify-between items-center"
+          >
+            <img class="w-full mb-3" src="../images/HtayAung.jpg" alt="" />
+            <h1 class="text-3xl pb-5 md:text-xl">Assignment File</h1>
+          </div>
+
+          <div
+            class="shadow-lg w-full md:w-[55%] h-[100%] rounded-md overflow-hidden flex flex-col justify-center items-center"
+          >
+            <img class="" src="../images/calendar.jpg" alt="" />
+          </div>
+        </div>
+        <!-- time table end  -->
+      </div>
+      <!-- all card container end -->
+    </main>
+    <!-- main body end  -->
+  </body>
+  <script src="./javascript/script.js"></script>
+</html>
