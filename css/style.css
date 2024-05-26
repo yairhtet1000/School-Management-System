@@ -508,3 +508,45 @@ body {
 .circle-con:nth-child(4) .circle-chart {
   transform: rotate(80deg);
 }
+
+/* NgweZinThaw */
+.mystudent{
+  width: 60%;
+  background-color: #173358;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  margin-left: 30px;
+  border-radius: 20px;
+
+}
+.mystudent h2{
+  color: #f1f1f1;
+}
+.their-child-info-wrapper{
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 30px;
+  width: 60%;
+  height: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.149);
+  border-radius: 20px;
+  
+}
+.child-info{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.child-info img{
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+}
+.child-info h2{
+  line-height: 200px;
+}
+.child-info p{
+  align-self: end;
+  padding-bottom: 10px;
+}
